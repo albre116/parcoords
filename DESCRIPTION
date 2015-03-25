@@ -14,7 +14,7 @@ Description: Create interactive parallel coordinates charts with this
     htmlwidget wrapper for d3.js
     \href{http://syntagmatic.github.io/parallel-coordinates/}{parallel-coordinates}.
 Depends:
-    R (>= 3.1.2)
+    R (>= 3.1.0)
 License: MIT + file LICENSE
 LazyData: true
 Imports:

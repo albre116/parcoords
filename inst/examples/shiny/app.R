@@ -4,6 +4,7 @@ library(dplyr)
 library(parcoords)
 
 
+
 body <- dashboardBody(
   box(
     title = "Parcoords Plot Example", width = NULL, status = "primary",
@@ -38,7 +39,7 @@ server = function(input, output, session) {
   ###standard parcoords plot in shiny
 
   output$DiamondPlot <- renderParcoords({
-    parcoords(DiamondData,rownames= T,
+    parcoords(DiamondData,rownames= F,
               color = list(colorScale = htmlwidgets::JS('d3.scale.category10()'),
                             colorBy = "carat"),
               brushMode = "2D-strums")
